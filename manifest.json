@@ -1,0 +1,12 @@
+{
+  "manifest_version": 3,
+  "name": "Crumble",
+  "version": "1.0",
+  "description": "View, edit, and delete cookies and local storage",
+  "permissions": ["cookies", "activeTab", "tabs", "scripting"],
+  "host_permissions": ["<all_urls>"],
+  "action": {
+    "default_popup": "popup.html",
+    "default_title": "Crumble"
+  }
+}

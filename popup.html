@@ -1,0 +1,78 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>Crumble</title>
+  <link rel="stylesheet" href="popup.css">
+</head>
+<body>
+
+  <div class="header">
+    <div class="header-left">
+      <span class="logo">crumble</span>
+      <span class="domain" id="domain">—</span>
+    </div>
+    <button class="btn-icon" id="refreshBtn" title="Refresh">
+      <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round">
+        <polyline points="23 4 23 10 17 10"/>
+        <path d="M20.49 15a9 9 0 1 1-2.12-9.36L23 10"/>
+      </svg>
+    </button>
+  </div>
+
+  <div class="tabs">
+    <button class="tab active" data-tab="cookies">Cookies</button>
+    <button class="tab" data-tab="storage">Local Storage</button>
+  </div>
+
+  <div class="toolbar">
+    <input type="text" class="filter-input" id="filterInput" placeholder="Filter by name or value…">
+    <button class="btn-danger" id="deleteAllBtn">Delete All</button>
+  </div>
+
+  <div class="table-wrap">
+    <table id="dataTable">
+      <thead id="tableHead"></thead>
+      <tbody id="tableBody"></tbody>
+    </table>
+    <div class="empty-state" id="emptyState" style="display:none">No items found</div>
+  </div>
+
+  <!-- Edit modal -->
+  <div class="modal-overlay" id="modalOverlay" style="display:none">
+    <div class="modal">
+      <div class="modal-header">
+        <span id="modalTitle">Edit</span>
+        <button class="btn-icon" id="modalClose">✕</button>
+      </div>
+      <div class="modal-body">
+        <label class="field-label">Name</label>
+        <input type="text" class="modal-input" id="editName" readonly>
+
+        <label class="field-label">Value</label>
+        <textarea class="modal-textarea" id="editValue" rows="5" spellcheck="false"></textarea>
+
+        <div id="cookieExtras" style="display:none">
+          <label class="field-label">Domain</label>
+          <input type="text" class="modal-input" id="editDomain" readonly>
+
+          <label class="field-label">Path</label>
+          <input type="text" class="modal-input" id="editPath" readonly>
+
+          <div class="field-row">
+            <label class="field-check"><input type="checkbox" id="editSecure"> Secure</label>
+            <label class="field-check"><input type="checkbox" id="editHttpOnly" disabled> HttpOnly</label>
+            <label class="field-check"><input type="checkbox" id="editSession"> Session</label>
+          </div>
+        </div>
+      </div>
+      <div class="modal-footer">
+        <button class="btn-secondary" id="modalCancel">Cancel</button>
+        <button class="btn-primary" id="modalSave">Save</button>
+      </div>
+    </div>
+  </div>
+
+  <script src="popup.js"></script>
+</body>
+</html>
