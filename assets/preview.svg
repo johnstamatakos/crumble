@@ -1,0 +1,200 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="560" height="480" viewBox="0 0 560 480">
+  <defs>
+    <clipPath id="rounded">
+      <rect width="560" height="480" rx="12" ry="12"/>
+    </clipPath>
+    <filter id="shadow" x="-10%" y="-10%" width="120%" height="120%">
+      <feDropShadow dx="0" dy="4" stdDeviation="12" flood-color="#000" flood-opacity="0.5"/>
+    </filter>
+  </defs>
+
+  <!-- Outer shadow -->
+  <rect width="560" height="480" rx="12" fill="transparent" filter="url(#shadow)"/>
+
+  <!-- Background -->
+  <rect width="560" height="480" rx="12" fill="#0f0f0f" clip-path="url(#rounded)"/>
+
+  <!-- Header -->
+  <rect width="560" height="44" fill="#161616"/>
+  <line x1="0" y1="44" x2="560" y2="44" stroke="#2a2a2a" stroke-width="1"/>
+
+  <!-- Logo -->
+  <text x="16" y="27" font-family="-apple-system, BlinkMacSystemFont, 'Segoe UI', sans-serif" font-size="14" font-weight="700" fill="#ffffff" letter-spacing="-0.3">crumble</text>
+
+  <!-- Domain -->
+  <text x="90" y="27" font-family="-apple-system, BlinkMacSystemFont, 'Segoe UI', sans-serif" font-size="12" fill="#666666">github.com</text>
+
+  <!-- Refresh icon -->
+  <g transform="translate(528, 15)" stroke="#555" stroke-width="2" fill="none" stroke-linecap="round" stroke-linejoin="round">
+    <polyline points="14,0 14,6 8,6"/>
+    <path d="M12.3 9a6 6 0 1 1-1.4-6.24L14 6"/>
+  </g>
+
+  <!-- Tabs -->
+  <rect y="44" width="560" height="36" fill="#161616"/>
+  <line x1="0" y1="80" x2="560" y2="80" stroke="#2a2a2a" stroke-width="1"/>
+
+  <!-- Active tab: Cookies -->
+  <text x="100" y="67" font-family="-apple-system, BlinkMacSystemFont, 'Segoe UI', sans-serif" font-size="12" font-weight="600" fill="#ffffff" text-anchor="middle">Cookies</text>
+  <line x1="40" y1="80" x2="160" y2="80" stroke="#ffffff" stroke-width="2"/>
+
+  <!-- Inactive tab: Local Storage -->
+  <text x="310" y="67" font-family="-apple-system, BlinkMacSystemFont, 'Segoe UI', sans-serif" font-size="12" font-weight="500" fill="#666666" text-anchor="middle">Local Storage</text>
+
+  <!-- Toolbar -->
+  <rect y="80" width="560" height="40" fill="#0f0f0f"/>
+  <line x1="0" y1="120" x2="560" y2="120" stroke="#1e1e1e" stroke-width="1"/>
+
+  <!-- Filter input -->
+  <rect x="10" y="90" width="390" height="28" rx="5" fill="#1a1a1a" stroke="#2a2a2a" stroke-width="1"/>
+  <text x="22" y="109" font-family="-apple-system, BlinkMacSystemFont, 'Segoe UI', sans-serif" font-size="12" fill="#444444">Filter by name or value…</text>
+
+  <!-- Delete All button -->
+  <rect x="410" y="90" width="140" height="28" rx="5" fill="#2a1a1a" stroke="#3d1f1f" stroke-width="1"/>
+  <text x="480" y="109" font-family="-apple-system, BlinkMacSystemFont, 'Segoe UI', sans-serif" font-size="12" font-weight="500" fill="#ff6b6b" text-anchor="middle">Delete All</text>
+
+  <!-- Table header -->
+  <rect y="120" width="560" height="28" fill="#0f0f0f"/>
+  <line x1="0" y1="148" x2="560" y2="148" stroke="#1e1e1e" stroke-width="1"/>
+  <text x="14" y="138" font-family="-apple-system, BlinkMacSystemFont, 'Segoe UI', sans-serif" font-size="11" font-weight="600" fill="#555555" letter-spacing="0.5">NAME</text>
+  <text x="230" y="138" font-family="-apple-system, BlinkMacSystemFont, 'Segoe UI', sans-serif" font-size="11" font-weight="600" fill="#555555" letter-spacing="0.5">VALUE</text>
+
+  <!-- Row 1 -->
+  <rect y="148" width="560" height="36" fill="#0f0f0f"/>
+  <line x1="0" y1="184" x2="560" y2="184" stroke="#181818" stroke-width="1"/>
+  <text x="14" y="171" font-family="'SF Mono', 'Fira Code', monospace" font-size="12" fill="#c9a9ff">session_id</text>
+  <text x="230" y="171" font-family="'SF Mono', 'Fira Code', monospace" font-size="12" fill="#7ec8a4">eyJhbGciOiJIUzI1NiIsIn…</text>
+  <!-- Edit icon -->
+  <g transform="translate(494, 161)" stroke="#555" stroke-width="2" fill="none" stroke-linecap="round" stroke-linejoin="round">
+    <path d="M6 2H2a1 1 0 0 0-1 1v8a1 1 0 0 0 1 1h8a1 1 0 0 0 1-1V8"/>
+    <path d="M8.5 0.5a1.5 1.5 0 0 1 2 2L5 8l-2 .5.5-2 5-5.5z"/>
+  </g>
+  <!-- Delete icon -->
+  <g transform="translate(520, 161)" stroke="#555" stroke-width="2" fill="none" stroke-linecap="round" stroke-linejoin="round">
+    <polyline points="0,2 1,2 9,2"/>
+    <path d="M8 2l-.5 7a1 1 0 0 1-1 1H2.5a1 1 0 0 1-1-1L1 2"/>
+    <path d="M3 2V1a.5.5 0 0 1 .5-.5h2A.5.5 0 0 1 6 1v1"/>
+  </g>
+
+  <!-- Row 2 -->
+  <rect y="184" width="560" height="36" fill="#0f0f0f"/>
+  <line x1="0" y1="220" x2="560" y2="220" stroke="#181818" stroke-width="1"/>
+  <text x="14" y="207" font-family="'SF Mono', 'Fira Code', monospace" font-size="12" fill="#c9a9ff">_ga</text>
+  <text x="230" y="207" font-family="'SF Mono', 'Fira Code', monospace" font-size="12" fill="#7ec8a4">GA1.2.1847392910.170…</text>
+  <g transform="translate(494, 197)" stroke="#555" stroke-width="2" fill="none" stroke-linecap="round" stroke-linejoin="round">
+    <path d="M6 2H2a1 1 0 0 0-1 1v8a1 1 0 0 0 1 1h8a1 1 0 0 0 1-1V8"/>
+    <path d="M8.5 0.5a1.5 1.5 0 0 1 2 2L5 8l-2 .5.5-2 5-5.5z"/>
+  </g>
+  <g transform="translate(520, 197)" stroke="#555" stroke-width="2" fill="none" stroke-linecap="round" stroke-linejoin="round">
+    <polyline points="0,2 1,2 9,2"/>
+    <path d="M8 2l-.5 7a1 1 0 0 1-1 1H2.5a1 1 0 0 1-1-1L1 2"/>
+    <path d="M3 2V1a.5.5 0 0 1 .5-.5h2A.5.5 0 0 1 6 1v1"/>
+  </g>
+
+  <!-- Row 3 - highlighted (hover) -->
+  <rect y="220" width="560" height="36" fill="#161616"/>
+  <line x1="0" y1="256" x2="560" y2="256" stroke="#181818" stroke-width="1"/>
+  <text x="14" y="243" font-family="'SF Mono', 'Fira Code', monospace" font-size="12" fill="#c9a9ff">_gid</text>
+  <text x="230" y="243" font-family="'SF Mono', 'Fira Code', monospace" font-size="12" fill="#7ec8a4">GA1.2.5582910384.170…</text>
+  <g transform="translate(494, 233)" stroke="#999" stroke-width="2" fill="none" stroke-linecap="round" stroke-linejoin="round">
+    <path d="M6 2H2a1 1 0 0 0-1 1v8a1 1 0 0 0 1 1h8a1 1 0 0 0 1-1V8"/>
+    <path d="M8.5 0.5a1.5 1.5 0 0 1 2 2L5 8l-2 .5.5-2 5-5.5z"/>
+  </g>
+  <g transform="translate(520, 233)" stroke="#ff6b6b" stroke-width="2" fill="none" stroke-linecap="round" stroke-linejoin="round">
+    <polyline points="0,2 1,2 9,2"/>
+    <path d="M8 2l-.5 7a1 1 0 0 1-1 1H2.5a1 1 0 0 1-1-1L1 2"/>
+    <path d="M3 2V1a.5.5 0 0 1 .5-.5h2A.5.5 0 0 1 6 1v1"/>
+  </g>
+
+  <!-- Row 4 -->
+  <rect y="256" width="560" height="36" fill="#0f0f0f"/>
+  <line x1="0" y1="292" x2="560" y2="292" stroke="#181818" stroke-width="1"/>
+  <text x="14" y="279" font-family="'SF Mono', 'Fira Code', monospace" font-size="12" fill="#c9a9ff">csrf_token</text>
+  <text x="230" y="279" font-family="'SF Mono', 'Fira Code', monospace" font-size="12" fill="#7ec8a4">a9f3c2e17b84d056fce3…</text>
+  <g transform="translate(494, 269)" stroke="#555" stroke-width="2" fill="none" stroke-linecap="round" stroke-linejoin="round">
+    <path d="M6 2H2a1 1 0 0 0-1 1v8a1 1 0 0 0 1 1h8a1 1 0 0 0 1-1V8"/>
+    <path d="M8.5 0.5a1.5 1.5 0 0 1 2 2L5 8l-2 .5.5-2 5-5.5z"/>
+  </g>
+  <g transform="translate(520, 269)" stroke="#555" stroke-width="2" fill="none" stroke-linecap="round" stroke-linejoin="round">
+    <polyline points="0,2 1,2 9,2"/>
+    <path d="M8 2l-.5 7a1 1 0 0 1-1 1H2.5a1 1 0 0 1-1-1L1 2"/>
+    <path d="M3 2V1a.5.5 0 0 1 .5-.5h2A.5.5 0 0 1 6 1v1"/>
+  </g>
+
+  <!-- Row 5 -->
+  <rect y="292" width="560" height="36" fill="#0f0f0f"/>
+  <line x1="0" y1="328" x2="560" y2="328" stroke="#181818" stroke-width="1"/>
+  <text x="14" y="315" font-family="'SF Mono', 'Fira Code', monospace" font-size="12" fill="#c9a9ff">_stripe_mid</text>
+  <text x="230" y="315" font-family="'SF Mono', 'Fira Code', monospace" font-size="12" fill="#7ec8a4">f8d3a21c-9e47-4b6f-b…</text>
+  <g transform="translate(494, 305)" stroke="#555" stroke-width="2" fill="none" stroke-linecap="round" stroke-linejoin="round">
+    <path d="M6 2H2a1 1 0 0 0-1 1v8a1 1 0 0 0 1 1h8a1 1 0 0 0 1-1V8"/>
+    <path d="M8.5 0.5a1.5 1.5 0 0 1 2 2L5 8l-2 .5.5-2 5-5.5z"/>
+  </g>
+  <g transform="translate(520, 305)" stroke="#555" stroke-width="2" fill="none" stroke-linecap="round" stroke-linejoin="round">
+    <polyline points="0,2 1,2 9,2"/>
+    <path d="M8 2l-.5 7a1 1 0 0 1-1 1H2.5a1 1 0 0 1-1-1L1 2"/>
+    <path d="M3 2V1a.5.5 0 0 1 .5-.5h2A.5.5 0 0 1 6 1v1"/>
+  </g>
+
+  <!-- Row 6 -->
+  <rect y="328" width="560" height="36" fill="#0f0f0f"/>
+  <line x1="0" y1="364" x2="560" y2="364" stroke="#181818" stroke-width="1"/>
+  <text x="14" y="351" font-family="'SF Mono', 'Fira Code', monospace" font-size="12" fill="#c9a9ff">intercom-session-abc</text>
+  <text x="230" y="351" font-family="'SF Mono', 'Fira Code', monospace" font-size="12" fill="#7ec8a4">dXNlcjoxMjM0NTY3OD…</text>
+  <g transform="translate(494, 341)" stroke="#555" stroke-width="2" fill="none" stroke-linecap="round" stroke-linejoin="round">
+    <path d="M6 2H2a1 1 0 0 0-1 1v8a1 1 0 0 0 1 1h8a1 1 0 0 0 1-1V8"/>
+    <path d="M8.5 0.5a1.5 1.5 0 0 1 2 2L5 8l-2 .5.5-2 5-5.5z"/>
+  </g>
+  <g transform="translate(520, 341)" stroke="#555" stroke-width="2" fill="none" stroke-linecap="round" stroke-linejoin="round">
+    <polyline points="0,2 1,2 9,2"/>
+    <path d="M8 2l-.5 7a1 1 0 0 1-1 1H2.5a1 1 0 0 1-1-1L1 2"/>
+    <path d="M3 2V1a.5.5 0 0 1 .5-.5h2A.5.5 0 0 1 6 1v1"/>
+  </g>
+
+  <!-- Row 7 -->
+  <rect y="364" width="560" height="36" fill="#0f0f0f"/>
+  <line x1="0" y1="400" x2="560" y2="400" stroke="#181818" stroke-width="1"/>
+  <text x="14" y="387" font-family="'SF Mono', 'Fira Code', monospace" font-size="12" fill="#c9a9ff">__cf_bm</text>
+  <text x="230" y="387" font-family="'SF Mono', 'Fira Code', monospace" font-size="12" fill="#7ec8a4">OyXNlcjoxMjM0NTY3O…</text>
+  <g transform="translate(494, 377)" stroke="#555" stroke-width="2" fill="none" stroke-linecap="round" stroke-linejoin="round">
+    <path d="M6 2H2a1 1 0 0 0-1 1v8a1 1 0 0 0 1 1h8a1 1 0 0 0 1-1V8"/>
+    <path d="M8.5 0.5a1.5 1.5 0 0 1 2 2L5 8l-2 .5.5-2 5-5.5z"/>
+  </g>
+  <g transform="translate(520, 377)" stroke="#555" stroke-width="2" fill="none" stroke-linecap="round" stroke-linejoin="round">
+    <polyline points="0,2 1,2 9,2"/>
+    <path d="M8 2l-.5 7a1 1 0 0 1-1 1H2.5a1 1 0 0 1-1-1L1 2"/>
+    <path d="M3 2V1a.5.5 0 0 1 .5-.5h2A.5.5 0 0 1 6 1v1"/>
+  </g>
+
+  <!-- Row 8 -->
+  <rect y="400" width="560" height="36" fill="#0f0f0f"/>
+  <line x1="0" y1="436" x2="560" y2="436" stroke="#181818" stroke-width="1"/>
+  <text x="14" y="423" font-family="'SF Mono', 'Fira Code', monospace" font-size="12" fill="#c9a9ff">_fbp</text>
+  <text x="230" y="423" font-family="'SF Mono', 'Fira Code', monospace" font-size="12" fill="#7ec8a4">fb.1.1701234567890.9…</text>
+  <g transform="translate(494, 413)" stroke="#555" stroke-width="2" fill="none" stroke-linecap="round" stroke-linejoin="round">
+    <path d="M6 2H2a1 1 0 0 0-1 1v8a1 1 0 0 0 1 1h8a1 1 0 0 0 1-1V8"/>
+    <path d="M8.5 0.5a1.5 1.5 0 0 1 2 2L5 8l-2 .5.5-2 5-5.5z"/>
+  </g>
+  <g transform="translate(520, 413)" stroke="#555" stroke-width="2" fill="none" stroke-linecap="round" stroke-linejoin="round">
+    <polyline points="0,2 1,2 9,2"/>
+    <path d="M8 2l-.5 7a1 1 0 0 1-1 1H2.5a1 1 0 0 1-1-1L1 2"/>
+    <path d="M3 2V1a.5.5 0 0 1 .5-.5h2A.5.5 0 0 1 6 1v1"/>
+  </g>
+
+  <!-- Row 9 -->
+  <rect y="436" width="560" height="36" fill="#0f0f0f"/>
+  <text x="14" y="459" font-family="'SF Mono', 'Fira Code', monospace" font-size="12" fill="#c9a9ff">_hjSessionUser</text>
+  <text x="230" y="459" font-family="'SF Mono', 'Fira Code', monospace" font-size="12" fill="#7ec8a4">{"userId":"a1b2c3d4e…</text>
+  <g transform="translate(494, 449)" stroke="#555" stroke-width="2" fill="none" stroke-linecap="round" stroke-linejoin="round">
+    <path d="M6 2H2a1 1 0 0 0-1 1v8a1 1 0 0 0 1 1h8a1 1 0 0 0 1-1V8"/>
+    <path d="M8.5 0.5a1.5 1.5 0 0 1 2 2L5 8l-2 .5.5-2 5-5.5z"/>
+  </g>
+  <g transform="translate(520, 449)" stroke="#555" stroke-width="2" fill="none" stroke-linecap="round" stroke-linejoin="round">
+    <polyline points="0,2 1,2 9,2"/>
+    <path d="M8 2l-.5 7a1 1 0 0 1-1 1H2.5a1 1 0 0 1-1-1L1 2"/>
+    <path d="M3 2V1a.5.5 0 0 1 .5-.5h2A.5.5 0 0 1 6 1v1"/>
+  </g>
+
+  <!-- Border overlay -->
+  <rect width="560" height="480" rx="12" fill="none" stroke="#2a2a2a" stroke-width="1" clip-path="url(#rounded)"/>
+</svg>
